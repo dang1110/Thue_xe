@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lý nhà xe</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <script src="./firebase.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Quản lý nhà xe</h1>
+
+    <!-- Vị trí đỗ xe -->
+    <h2>Vị trí đỗ xe</h2>
+    <div class="parking-container">
+        <div class="parking-spot" id="position_1">Xe 1</div>
+        <div class="parking-spot" id="position_2">Xe 2</div>
+        <div class="parking-spot" id="position_3">Xe 3</div>
+    </div>
+
+    <!-- Thêm tài khoản -->
+    <h2>Thêm tài khoản</h2>
+    <div class="add-account-container">
+        <form id="add-account-form">
+            <label for="account-id">ID:</label>
+            <input type="text" id="account-id" name="account-id" required>
+
+            <label for="account-name">Tên tài khoản:</label>
+            <input type="text" id="account-name" name="account-name" required>
+
+            <button type="submit">Thêm</button>
+        </form>
+    </div>
+
+    <!-- Danh sách tài khoản -->
+    <h2>Danh sách tài khoản</h2>
+    <div class="account-list-container">
+        <table id="account-table">
+            <tr>
+                <th>ID</th>
+                <th>Tên tài khoản</th>
+                <th>Trạng thái</th>
+                <th>Thời gian thuê</th>
+                <th>Thời gian còn lại</th>
+                <th></th>
+            </tr>
+            <!-- Thêm các hàng dữ liệu tài khoản khác ở đây -->
+        </table>
+    </div>
+</body>
+
+</html>
